@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Autodialer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f9fc;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #0d6efd;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: #0d6efd;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      resize: vertical;
+      font-size: 16px;
+    }
+
+    input[type="text"] {
+      width: calc(100% - 140px);
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    input[type="file"] {
+      margin-top: 10px;
+    }
+
+    button, input[type="submit"] {
+      background-color: #0d6efd;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    button:hover, input[type="submit"]:hover {
+      background-color: #0b5ed7;
+    }
+
+    .ai-command {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    #ai_response {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #198754;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #0d6efd;
+      color: #fff;
+    }
+
+    .delete-logs-btn {
+      background-color: #dc3545;
+      margin-top: 15px;
+    }
+
+    .delete-logs-btn:hover {
+      background-color: #b02a37;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .flex-center {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    @media(max-width: 600px) {
+      input[type="text"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Autodialer</h1>
+
+    <!-- Upload Numbers Section -->
+    <div class="section">
+      <h3>Upload or Paste Numbers</h3>
+      <%= form_with url: upload_numbers_dialer_index_path, local: true, multipart: true do %>
+        <textarea name="numbers_text" rows="6" placeholder="Paste numbers here..."></textarea><br>
+        <input type="file" name="file"><br>
+        <input type="submit" value="Upload">
+      <% end %>
+
+      <%= button_to "Start Calls", start_calls_dialer_index_path, method: :post %>
+    </div>
+
+    <!-- AI Command Section -->
+    <div class="section">
+      <h3>AI Command</h3>
+      <div class="ai-command flex-center">
+        <input type="text" id="ai_text" placeholder="say: make a call to 1800123456">
+        <button id="ai_send">Send</button>
+        <button id="start_listen">🎙️ Speak</button>
+      </div>
+      <div id="ai_response"></div>
+    </div>
+
+    <!-- Logs Section -->
+    <div class="section">
+      <h3>Call Logs</h3>
+      <%= button_to "Delete All Logs", delete_logs_dialer_index_path, method: :delete, class: "delete-logs-btn", data: { confirm: "Are you sure you want to delete all logs?" } %>
+      <table id="logs_table">
+        <thead>
+          <tr>
+            <th>Phone</th>
+            <th>Status</th>
+            <th>Message</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @call_logs.each do |log| %>
+            <tr>
+              <td><%= log.phone_number %></td>
+              <td><%= log.status.capitalize %></td>
+              <td><%= log.message.presence || "-" %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    async function fetchLogs() {
+      const res = await fetch("<%= fetch_logs_dialer_index_path %>");
+      if (!res.ok) return;
+      const logs = await res.json();
+      const tableBody = logs.map(log => `
+        <tr>
+          <td>${log.phone_number}</td>
+          <td style="color: ${log.status === 'failed' ? 'red' : log.status === 'queued' ? 'orange' : 'green'};">
+            ${log.status.charAt(0).toUpperCase() + log.status.slice(1)}
+          </td>
+          <td>${log.message || '-'}</td>
+        </tr>
+      `).join('');
+      document.querySelector('#logs_table tbody').innerHTML = tableBody;
+    }
+
+    document.getElementById('ai_send').addEventListener('click', async () => {
+      const text = document.getElementById('ai_text').value.trim();
+      if (!text) return alert("Please enter a command");
+      const res = await fetch("<%= ai_command_dialer_index_path %>", {
+        method: "POST",
+        headers: {'Content-Type': 'application/json', 'X-CSRF-Token': '<%= form_authenticity_token %>'},
+        body: JSON.stringify({ ai_text: text })
+      });
+      const json = await res.json();
+      document.getElementById('ai_response').innerText = json.result;
+      // Fetch updated logs after the AI call
+      fetchLogs();
+    });
+
+    if ('webkitSpeechRecognition' in window) {
+      const rec = new webkitSpeechRecognition();
+      rec.lang = "en-IN";
+      rec.onresult = (e) => {
+        document.getElementById('ai_text').value = e.results[0][0].transcript;
+      };
+      document.getElementById('start_listen').addEventListener('click', () => rec.start());
+    }
+
+    setInterval(fetchLogs, 3000);
+  </script>
+
+</body>
+</html>

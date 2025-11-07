@@ -1,0 +1,172 @@
+URL: https://www.linkedin.com/in/vansh-singh-77988b235/
+Name: Vansh Singh
+Location: 2nd degree connection
+2nd
+About: None
+Experience: Business Analyst - (User Growth)
+Business Analyst - (User Growth)
+Meesho · Full-time
+Meesho · Full-time
+Jun 2025 - Present · 6 mos
+Jun 2025 to Present · 6 mos
+Bangalore Urban, Karnataka, India · On-site
+Bangalore Urban, Karnataka, India · On-site | Mentor
+Mentor
+Coding Club IIT Jammu
+Coding Club IIT Jammu
+Jan 2023 - Jun 2025 · 2 yrs 6 mos
+Jan 2023 to Jun 2025 · 2 yrs 6 mos
+Skills: C++ · Data Structures · Communication · Algorithms · Python
+Skills:C++ · Data Structures · Communication · Algorithms · Python | ML Research Intern
+ML Research Intern
+Indian Institute of Science (IISc) · Internship
+Indian Institute of Science (IISc) · Internship
+May 2024 - Jul 2024 · 3 mos
+May 2024 to Jul 2024 · 3 mos
+Bengaluru, Karnataka, India · On-site
+Bengaluru, Karnataka, India · On-site
+Skills: Computer Vision · Algorithm Design · Research and Development (R&D) · QNN · Keras · Analytical Skills · TensorFlow · PyTorch · Python · Data Analysis
+Skills:Computer Vision · Algorithm Design · Research and Development (R&D) · QNN · Keras · Analytical Skills · TensorFlow · PyTorch · Python · Data Analysis
+Vansh internship completion letter.pdf
+Vansh internship completion letter.pdf | Deep Learning Research Intern
+Deep Learning Research Intern
+Indian Institute of Technology Jammu · Internship
+Indian Institute of Technology Jammu · Internship
+May 2023 - Sep 2023 · 5 mos
+May 2023 to Sep 2023 · 5 mos
+Jammu & Kashmir, India · Hybrid
+Jammu & Kashmir, India · Hybrid
+1.Innovated privacy-preserving proxy fingerprints: Devised a novel approach for generating fingerprint proxies that safeguard user privacy.
+2.Domain-adaptive GAN model: Successfully trained a singular Generative Adversarial Network (GAN) to operate across five distinct fingerprint domains, ensuring seamless adaptation to new data.
+3.Tailored minutiae loss function: Engineered a unique loss function for GAN training, specifically designed to preserve the intricate details of fingerprints, including minutiae and ridge patterns.
+4.High-quality generated samples: Achieved an impressive Mean Structural Similarity Index (MSSIM) value of 0.56263 for generated samples. This notable score signifies that the generated fingerprints closely resemble real fingerprints in quality.
+1.Innovated privacy-preserving proxy fingerprints: Devised a novel approach for generating fingerprint proxies that safeguard user privacy. 2.Domain-adaptive GAN model: Successfully trained a singular Generative Adversarial Network (GAN) to operate across five distinct fingerprint domains, ensuring seamless adaptation to new data. 3.Tailored minutiae loss function: Engineered a unique loss function for GAN training, specifically designed to preserve the intricate details of fingerprints, including minutiae and ridge patterns. 4.High-quality generated samples: Achieved an impressive Mean Structural Similarity Index (MSSIM) value of 0.56263 for generated samples. This notable score signifies that the generated fingerprints closely resemble real fingerprints in quality.
+Skills: Generative Adversarial Networks (GANs) · UNET · Machine Learning Algorithms · Deep Learning · Research and Development (R&D) · Analytical Skills · Variational Autoencoders (VAEs) · Data Analysis
+Skills:Generative Adversarial Networks (GANs) · UNET · Machine Learning Algorithms · Deep Learning · Research and Development (R&D) · Analytical Skills · Variational Autoencoders (VAEs) · Data Analysis
+_INTERNSHIP_VANSH_signed (1).pdf
+_INTERNSHIP_VANSH_signed (1).pdf | AI/ML Engineer 
+AI/ML Engineer
+Fusion Tech Process Consulting · Internship
+Fusion Tech Process Consulting · Internship
+May 2023 - Jul 2023 · 3 mos
+May 2023 to Jul 2023 · 3 mos
+Remote
+Remote
+1.Image and Video Analyst: Specialized in deploying pipelines across various architectures and deep learning models.
+2.Real-Time Video Optimization: Successfully created a pipeline integrating deep face, Caffe, and Haar cascade models to optimize real-time video sizes by eliminating redundant and verified frames.
+3.Text-to-Speech Expertise: Implemented and evaluated multiple text-to-speech conversion models, including Google TTS, ConquiAPI, pyttsx3, and TensorFlow text-to-speech library, considering factors like conversion time, sound quality, and pitch.
+4.Multi-Speaker Voice Cloning: Developed a multilingual voice cloning model using ConquiAPI, incorporating TDNN model and cosine similarity for quality evaluation.
+1.Image and Video Analyst: Specialized in deploying pipelines across various architectures and deep learning models. 2.Real-Time Video Optimization: Successfully created a pipeline integrating deep face, Caffe, and Haar cascade models to optimize real-time video sizes by eliminating redundant and verified frames. 3.Text-to-Speech Expertise: Implemented and evaluated multiple text-to-speech conversion models, including Google TTS, ConquiAPI, pyttsx3, and TensorFlow text-to-speech library, considering factors like conversion time, sound quality, and pitch. 4.Multi-Speaker Voice Cloning: Developed a multilingual voice cloning model using ConquiAPI, incorporating TDNN model and cosine similarity for quality evaluation.
+Skills: Machine Learning Algorithms · Computer Vision · Algorithm Design · Natural Language Processing (NLP) · GitHub · Analytical Skills · TensorFlow · Kaggle · TDNN
+Skills:Machine Learning Algorithms · Computer Vision · Algorithm Design · Natural Language Processing (NLP) · GitHub · Analytical Skills · TensorFlow · Kaggle · TDNN
+Intership certificate Vansh Singh (1).pdf
+Intership certificate Vansh Singh (1).pdf
+Education: Indian Institute of Technology Jammu
+Indian Institute of Technology Jammu
+Bachelor of Technology - BTech, Mechanical Engineering
+Bachelor of Technology - BTech, Mechanical Engineering
+2021 - 2025
+2021 - 2025 | Sant Atulanand Convent School
+Sant Atulanand Convent School
+Sant Atulanand Convent School
+12th Grade
+12th Grade
+Mar 2020 - May 2021
+Mar 2020 - May 2021
+Grade: 94.6%
+Grade: 94.6% | Sant Atulanand Convent School
+Sant Atulanand Convent School
+Sant Atulanand Convent School
+10th Grade
+10th Grade
+Mar 2018 - May 2019
+Mar 2018 - May 2019
+Grade: 95%
+Grade: 95%
+Skills: Research and Development (R&D)
+Research and Development (R&D)
+2 experiences across Indian Institute of Science (IISc) and 1 other company
+2 experiences across Indian Institute of Science (IISc) and 1 other company, Data Analysis
+Data Analysis
+2 experiences across Indian Institute of Science (IISc) and 1 other company
+2 experiences across Indian Institute of Science (IISc) and 1 other company, Analytical Skills
+Analytical Skills
+3 experiences across Indian Institute of Science (IISc) and 2 other companies
+3 experiences across Indian Institute of Science (IISc) and 2 other companies, Communication
+Communication
+Mentor at Coding Club IIT Jammu
+Mentor at Coding Club IIT Jammu
+Student Representative
+Student Representative, PyTorch
+PyTorch
+ML Research Intern at Indian Institute of Science (IISc)
+ML Research Intern at Indian Institute of Science (IISc), Keras
+Keras
+ML Research Intern at Indian Institute of Science (IISc)
+ML Research Intern at Indian Institute of Science (IISc), QNN
+QNN
+ML Research Intern at Indian Institute of Science (IISc)
+ML Research Intern at Indian Institute of Science (IISc), Python
+Python
+2 experiences across Coding Club IIT Jammu and 1 other company
+2 experiences across Coding Club IIT Jammu and 1 other company
+Passed LinkedIn Skill Assessment
+Passed LinkedIn Skill Assessment, Algorithms
+Algorithms
+Mentor at Coding Club IIT Jammu
+Mentor at Coding Club IIT Jammu, Data Structures
+Data Structures
+Mentor at Coding Club IIT Jammu
+Mentor at Coding Club IIT Jammu, Computer Vision
+Computer Vision
+2 experiences across Indian Institute of Science (IISc) and 1 other company
+2 experiences across Indian Institute of Science (IISc) and 1 other company, Algorithm Design
+Algorithm Design
+2 experiences across Indian Institute of Science (IISc) and 1 other company
+2 experiences across Indian Institute of Science (IISc) and 1 other company, Natural Language Processing (NLP)
+Natural Language Processing (NLP)
+AI/ML Engineer at Fusion Tech Process Consulting
+AI/ML Engineer at Fusion Tech Process Consulting, GitHub
+GitHub
+AI/ML Engineer at Fusion Tech Process Consulting
+AI/ML Engineer at Fusion Tech Process Consulting, TensorFlow
+TensorFlow
+2 experiences across Indian Institute of Science (IISc) and 1 other company
+2 experiences across Indian Institute of Science (IISc) and 1 other company, Kaggle
+Kaggle
+AI/ML Engineer at Fusion Tech Process Consulting
+AI/ML Engineer at Fusion Tech Process Consulting, TDNN
+TDNN
+AI/ML Engineer at Fusion Tech Process Consulting
+AI/ML Engineer at Fusion Tech Process Consulting, Variational Autoencoders (VAEs)
+Variational Autoencoders (VAEs)
+Deep Learning Research Intern at Indian Institute of Technology Jammu
+Deep Learning Research Intern at Indian Institute of Technology Jammu, Generative Adversarial Networks (GANs)
+Generative Adversarial Networks (GANs)
+Deep Learning Research Intern at Indian Institute of Technology Jammu
+Deep Learning Research Intern at Indian Institute of Technology Jammu, Machine Learning Algorithms
+Machine Learning Algorithms
+2 experiences across Indian Institute of Technology Jammu and 1 other company
+2 experiences across Indian Institute of Technology Jammu and 1 other company, Deep Learning
+Deep Learning
+Deep Learning Research Intern at Indian Institute of Technology Jammu
+Deep Learning Research Intern at Indian Institute of Technology Jammu, UNET
+UNET
+Deep Learning Research Intern at Indian Institute of Technology Jammu
+Deep Learning Research Intern at Indian Institute of Technology Jammu, Management
+Management, MySQL
+MySQL, Web Development
+Web Development, Cascading Style Sheets (CSS)
+Cascading Style Sheets (CSS), HTML
+HTML, Python (Programming Language)
+Python (Programming Language)
+Passed LinkedIn Skill Assessment
+Passed LinkedIn Skill Assessment, C++
+C++
+Mentor at Coding Club IIT Jammu
+Mentor at Coding Club IIT Jammu
+Publications: 
+Volunteering: 
+
+--------------------------------------------------------------------------------
+

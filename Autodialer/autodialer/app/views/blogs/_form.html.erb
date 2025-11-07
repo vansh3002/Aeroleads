@@ -1,0 +1,88 @@
+<%= form_with(model: @blog, local: true) do |form| %>
+  <% if @blog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
+      <ul>
+        <% @blog.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title, id: "blog_title" %>
+  </div>
+
+  <div>
+    <%= form.label :body %><br>
+    <%= form.text_area :body, id: "blog_body", rows: 10 %>
+  </div>
+
+  <div>
+    <button type="button" id="generate_ai_btn">✨ Generate AI Content</button>
+    <span id="ai_status" style="margin-left: 10px; display: none;">Generating...</span>
+  </div>
+
+  <div>
+    <%= form.submit "Create Blog" %>
+  </div>
+<% end %>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("generate_ai_btn");
+  const status = document.getElementById("ai_status");
+  const bodyField = document.getElementById("blog_body");
+  const titleField = document.getElementById("blog_title");
+
+  btn.addEventListener("click", async () => {
+    const title = titleField.value.trim();
+    if (!title) {
+      alert("Please enter a title first.");
+      return;
+    }
+
+    status.style.display = "inline";
+    btn.disabled = true;
+
+    try {
+      const csrfToken = document.querySelector('meta[name="csrf-token"]').content;
+
+      // Prepare the prompt
+      const promptText = `Write a detailed programming blog about "${title}". Include:
+1. Introduction
+2. Key concepts
+3. Example code snippets (Ruby preferred)
+4. Conclusion
+Write in a professional but easy-to-read style.`;
+
+      // Send request to ai_generate
+      const response = await fetch("/blogs/ai_generate", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-CSRF-Token": csrfToken,
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({ prompt: promptText })
+      });
+
+      if (!response.ok) {
+        throw new Error(`Server error: ${response.status}`);
+      }
+
+      const data = await response.json();
+      bodyField.value = data.body || "AI generation failed.";
+
+    } catch (error) {
+      console.error("AI generation error:", error);
+      alert("Failed to generate AI content. Please try again.");
+    } finally {
+      status.style.display = "none";
+      btn.disabled = false;
+    }
+  });
+});
+</script>
