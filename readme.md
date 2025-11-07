@@ -14,12 +14,13 @@ This project is a multi-functional automation toolkit with two main modules:
 ---
 
 ## Project Structure
+```text
 root/
-├── autodialer/ # Web interface combining both dialer and blog generator
-│ ├── dialer/ # Automated calling scripts (Twilio integration)
-│ ├── blog/ # AI-powered blog generator
-│ └── README.md # Instructions for autodialer usage
-├── linked_in_scraper/ # LinkedIn scraping module
-│ ├── check.ipynb # Scraper logic
-│ ├── linkedin_profiles.csv # Input URLs and scraped data
-│ └── README.md # Instructions for scraper usage
+├── autodialer/                 # Web interface combining both dialer and blog generator
+│   ├── dialer/                 # Automated calling scripts (Twilio integration)
+│   ├── blog/                   # AI-powered blog generator
+│   └── README.md               # Instructions for autodialer usage
+├── linked_in_scraper/          # LinkedIn scraping module
+│   ├── check.ipynb             # Scraper logic
+│   ├── linkedin_profiles.csv   # Input URLs and scraped data
+│   └── README.md               # Instructions for scraper usage```
